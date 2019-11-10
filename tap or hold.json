@@ -1,0 +1,29 @@
+
+{
+  "title": "tap or hold - a halt example",
+  "rules": [
+    {
+      "description": "this test",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock"
+          },
+          "to": [{"key_code": "fn"}],
+          "to_after_key_up": [
+            {
+              "key_code": "escape"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "key_code": "fn",
+              "halt": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

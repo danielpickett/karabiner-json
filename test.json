@@ -1,0 +1,12 @@
+{
+  "title": "Daniel Pickett - Expiremental",
+  "rules": [
+    {
+      "description": "Daniel Pickett - Experiment",
+      "manipulators": [
+        {"type": "basic","from": {"key_code": "spacebar", "modifiers": {"optional": ["any"]}},"to": [{"key_code": "fn"}],"to_if_alone": [{"key_code": "escape"}],"to_if_held_down": [{"key_code": "fn","halt": true}]},
+        {"type": "basic", "from": {"key_code": "u", "modifiers": {"mandatory": ["fn"], "optional": ["any"]}}, "to": [{"key_code": "left_arrow", "modifiers": ["left_command"]}]}
+      ]
+    }
+  ]
+}
