@@ -1,0 +1,12 @@
+{
+  "title": "Daniel Pickett - brackets to f23 f24",
+  "rules": [
+    {
+      "description": "Daniel Pickett - brackets to f23 f24",
+      "manipulators": [
+        {"type": "basic","from": {"key_code": "open_bracket", "modifiers": {"optional": ["any"]}},"to": [{"key_code": "f23"}]},
+        {"type": "basic","from": {"key_code": "close_bracket", "modifiers": {"optional": ["any"]}},"to": [{"key_code": "f24"}]}
+      ]
+    }
+  ]
+}
